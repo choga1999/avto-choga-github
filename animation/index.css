@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.parent-flex{
+    margin-left: 300px;
+    margin-top: 8px;
+    gap: 10px;
+    padding: 10px;
+    display: flex;
+}
+
+
+.child-btn{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(212, 152, 78);
+    font-size: 30px;
+    width: 150px;
+    height: 45px;
+}
+
+.child-btn-1{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color:rgb(168, 85, 85);
+    font-size: 30px;
+    width: 150px;
+    height: 45px;
+}
+
+.child-btn:hover{
+    color: rgb(193, 111, 10);
+    scale: 2.1;
+    background-color: rgb(22, 83, 169);
+}
+
+
+.child-btn-1:hover{
+    color: rgb(7, 33, 4);
+    scale: 2.1;
+    background-color: rgb(146, 8, 34);
+}
+
+
+.submit-btn{
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    height: 40px;
+    font-size: 25px;
+    background-color: rgb(156, 192, 27);
+    margin-top: 15px;
+    
+}
+
+.flex-form{
+    margin-left: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-form input{
+    width: 200px;
+    padding: 7px;
+}
+
+.flex-form label{
+    padding-bottom: 6px;
+    padding-top: 10px;
+}
+
+
+.disabled-input:disabled{
+    border-radius: 5px;
+    color: rgb(174, 131, 78);
+    border: 1px solid rgb(89, 55, 55);
+}
+
+.required-input:required{
+    border-radius: 5px;
+    border: 1px solid rgb(160, 231, 160);
+}
+
+.focus-input{
+    border: 1px solid rgb(15, 20, 79);
+    border-radius: 5px;
+}
+
+.focus-input:focus{
+    border: 1px solid rgb(137, 226, 137);
+    color: rgb(46, 16, 16);
+    border-radius: 5px;
+    background-color: rgb(8, 183, 183);
+}
+
+
+
+/* animation */
+@keyframes scaleAndColorChange {
+    0% {
+        transform: scale(1);
+        background-color: #333;
+    }
+    50% {
+        transform: scale(1.2);
+        background-color: #555;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #333;
+    }
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+    animation: scaleAndColorChange 1s ease-in-out; /* Apply the animation */
+}
+
+.sticky {
+    animation: none; /* Remove the animation when it becomes sticky */
+}
+
