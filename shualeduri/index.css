@@ -521,3 +521,26 @@
         background-color: rgb(255, 255, 255);
         border-radius: 12px;
       }
+      .x-usd{
+        width: 172px;
+        color: var(--secondary-500, #2DA5F3);
+    font-family: Public Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+        position: absolute;
+        top: 116px;
+        right: 40px;
+      }
+      .btn-usd{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding-top:32px;
+        padding-left: 32px;
+        border-radius: 3px;
+        background: var(--primary-500, #964916);
+        border: none;
+        color: rgb(255, 255, 255);
+      }
